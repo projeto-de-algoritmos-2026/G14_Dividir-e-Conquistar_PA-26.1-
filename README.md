@@ -367,8 +367,7 @@ Esse comportamento o torna adequado para aplicações que trabalham com grandes 
 ## Estrutura do Projeto
 
 ```text
-projeto_bolsa/
-
+G14_Dividir-e-Conquistar_PA-26.1
 ├── candidato.py
 │   └── Classe responsável por representar um candidato
 │
