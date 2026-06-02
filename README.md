@@ -101,15 +101,29 @@ O sistema desenvolvido permite:
 
 Representa o estado inicial do sistema, onde o usuário pode escolher uma das funcionalidades disponíveis.
 
-*Inserir screenshot aqui*
+<img width="377" height="232" alt="image" src="https://github.com/user-attachments/assets/452d19e7-96cb-4ef5-a272-2a37bec98424" />
+
+---
+
+### Sistema Vazio
+
+<img width="353" height="53" alt="image" src="https://github.com/user-attachments/assets/b60d07ab-158c-452b-bfc0-2d70e77dd841" />
 
 ---
 
 ### Cadastro de Candidatos
 
-Mostra o cadastro de candidatos contendo nome e nota.
+Mostra o cadastro de candidatos contendo nome e nota. 
 
-*Inserir screenshot aqui*
+<img width="312" height="83" alt="image" src="https://github.com/user-attachments/assets/93c44623-ca85-4628-8b86-1aef61b08447" />
+
+---
+
+### Listar Candidatos
+
+Exibe uma lista com os cadidatos cadastrados. (Neste exemplo cadastramos cinco pessoas)
+
+<img width="276" height="160" alt="image" src="https://github.com/user-attachments/assets/080e2157-402b-48c8-9666-5d490ee4aa40" />
 
 ---
 
@@ -117,7 +131,8 @@ Mostra o cadastro de candidatos contendo nome e nota.
 
 Exibe o resultado da execução do algoritmo Mediana das Medianas para encontrar a mediana das notas.
 
-*Inserir screenshot aqui*
+<img width="258" height="55" alt="image" src="https://github.com/user-attachments/assets/ff1418a7-1d4a-4df3-bba8-7741305e8118" />
+
 
 ---
 
@@ -131,15 +146,35 @@ Exemplo:
 - 10º colocado
 - 100º colocado
 
-*Inserir screenshot aqui*
+<img width="277" height="87" alt="image" src="https://github.com/user-attachments/assets/cf136656-4e2f-42e1-839b-0c76a62e731d" />
+
 
 ---
 
 ### Top 10% dos Candidatos
 
-Mostra os candidatos com melhor desempenho no processo seletivo.
+Mostra os candidatos com melhor desempenho no processo seletivo. (Neste exemplo cadastramos mais cinco pessoas)
 
-*Inserir screenshot aqui*
+<img width="295" height="112" alt="image" src="https://github.com/user-attachments/assets/f08af9c9-31f4-4c50-a462-9e08687ff862" /> <br>
+
+<img width="239" height="284" alt="image" src="https://github.com/user-attachments/assets/84b39798-a7a3-4e33-9402-79dd656c475f" />
+
+---
+
+### Gerar Relatório
+
+Mostra o total de candidatos, note de corte, melhor e pior nota.
+
+<img width="318" height="348" alt="image" src="https://github.com/user-attachments/assets/0d2dfbd4-823a-4f80-8a44-b6615c613097" />
+
+---
+### Geração Automática de Cadidatos
+
+Gera candidatos automaticamente.
+
+<img width="331" height="85" alt="image" src="https://github.com/user-attachments/assets/d01c476c-8ab7-4e9f-81a7-f4ea31f02ce2" /> <br>
+
+<img width="258" height="346" alt="image" src="https://github.com/user-attachments/assets/b90fb416-0463-4a80-a02f-6b1823e22c94" />
 
 ---
 
@@ -147,7 +182,7 @@ Mostra os candidatos com melhor desempenho no processo seletivo.
 
 Exibe os tempos de execução entre a abordagem tradicional baseada em ordenação e o algoritmo Mediana das Medianas.
 
-*Inserir screenshot aqui*
+<img width="442" height="399" alt="image" src="https://github.com/user-attachments/assets/20d59634-1e02-4959-ad76-e7280f154c67" />
 
 ---
 
