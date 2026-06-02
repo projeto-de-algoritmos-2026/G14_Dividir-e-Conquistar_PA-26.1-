@@ -1,47 +1,90 @@
 from candidato import Candidato
-from mediana_das_medianas import mediana_das_medianas
+from sistema_bolsa import SistemaBolsa
+import random
 
-class SistemaBolsa:
+sistema = SistemaBolsa()
 
-    def __init__(self):
-        self.candidatos = []
+while True:
 
-    def adicionar_candidato(self, candidato):
-        self.candidatos.append(candidato)
+    print("\n===== SISTEMA DE BOLSAS =====")
+    print("1 - Adicionar candidato")
+    print("2 - Listar candidatos")
+    print("3 - Calcular nota de corte")
+    print("4 - Mostrar Top 10%")
+    print("5 - Buscar posição K")
+    print("6 - Gerar relatório")
+    print("7 - Gerar candidatos aleatórios")
+    print("0 - Sair")
 
-    def nota_de_corte(self):
+    opcao = input("Escolha: ")
 
-        notas = [
-            candidato.nota
-            for candidato in self.candidatos
-        ]
+    if opcao == "1":
 
-        return mediana_das_medianas(
-            notas,
-            len(notas)//2
+        nome = input("Nome: ")
+        nota = int(input("Nota: "))
+
+        sistema.adicionar_candidato(
+            Candidato(nome, nota)
         )
 
-    def candidato_posicao_k(self, k):
+    elif opcao == "2":
 
-        ordenados = sorted(
-            self.candidatos,
-            key=lambda c: c.nota,
-            reverse=True
+        sistema.listar_candidatos()
+
+    elif opcao == "3":
+
+        print(
+            f"Nota de corte: "
+            f"{sistema.nota_de_corte()}"
         )
 
-        return ordenados[k-1]
+    elif opcao == "4":
 
-    def top_10_porcento(self):
+        print("\nTOP 10%")
 
-        ordenados = sorted(
-            self.candidatos,
-            key=lambda c: c.nota,
-            reverse=True
+        for candidato in sistema.top_10_porcento():
+            print(candidato)
+
+    elif opcao == "5":
+
+        k = int(
+            input("Digite a posição: ")
         )
 
-        quantidade = max(
-            1,
-            int(len(ordenados) * 0.10)
+        print(
+            sistema.candidato_posicao_k(k)
         )
 
-        return ordenados[:quantidade]
+    elif opcao == "6":
+
+        sistema.gerar_relatorio()
+
+    elif opcao == "7":
+
+        quantidade = int(
+            input(
+                "Quantidade de candidatos: "
+            )
+        )
+
+        for i in range(1, quantidade+1):
+
+            sistema.adicionar_candidato(
+                Candidato(
+                    f"Aluno {i}",
+                    random.randint(0, 1000)
+                )
+            )
+
+        print(
+            f"{quantidade} candidatos gerados!"
+        )
+
+    elif opcao == "0":
+
+        print("Encerrando...")
+        break
+
+    else:
+
+        print("Opção inválida.")
