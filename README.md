@@ -2,7 +2,7 @@
 
 Número da Dupla: 14<br>
 Conteúdo da Disciplina: D&C<br>
-Vídeo da Apresentação: ()
+Vídeo da Apresentação: (https://youtu.be/XfIUKJy13ug)
 
 ## Alunas
 |Matrícula | Aluna |
